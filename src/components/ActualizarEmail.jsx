@@ -59,7 +59,7 @@ export default function ActualizarEmail() {
 
         setCargando(true);
         try {
-            // usamos el estudianteId que viene de la URL, no un prop
+            
             const estudianteActualizado = await updateEmail(estudianteId, correo);
             setExito(true);
             Swal.fire({
